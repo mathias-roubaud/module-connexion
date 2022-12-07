@@ -16,7 +16,6 @@
             <div id="boutona"> <a href ="http://localhost/module-connexion/index.php/"> Accueil </a> </div>
             <div id="boutonb"> <a href ="https://support.rockstargames.com/fr/"> Contact </a> </div>
             <div id="boutonc"> <a href ="https://localhost/module-connexion/connexion.php"> Déjà inscrit ? </a> </div>
-            <div id="boutond"> <a href ="https:/localhost/module-connexion/profil.php/"> Profil </a> </div>
         </div>
                 <div class ="topleft">
                 <a href="https://socialclub.rockstargames.com/"> 

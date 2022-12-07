@@ -14,7 +14,6 @@
             <div id="boutona"> <a href ="http://localhost/module-connexion/index.php/"> Accueil </a> </div>
             <div id="boutonb"> <a href ="https://support.rockstargames.com/fr/"> Contact </a> </div>
             <div id="boutonc"> <a href ="https://localhost/module-connexion/connexion.php"> Déjà inscrit ? </a> </div>
-            <div id="boutond"> <a href ="https:/localhost/module-connexion/profil.php/"> Profil </a> </div>
         </div>
                 <div class ="topleft">
                 <a href="https://socialclub.rockstargames.com/"> 
@@ -48,12 +47,7 @@
 
                 if ($pswrd1 === $pswrd2){
                     if(!empty($pseudo) && !empty($prenom) && !empty($nom) && !empty($pswrd1)){
-                        echo "Vos informations : <br/>";
-                        echo "Votre Pseudo : ".$pseudo . "<br/>";
-                        echo "Votre Prenom : ".$prenom . "<br/>";
-                        echo "Votre Nom : ".$nom . "<br/>";
-                        echo "Votre Mot de passe : ".$pswrd1 . "<br/>";
-                        include 'module-connexion/connexion.php';
+                        echo '<a href=https://localhost/module-connexion/connexion2.php> Cliquez ici pour vous connecter !</a>';
     
     
                         $mysqli = new mysqli('localhost', 'root', '', 'siteweb');
@@ -61,7 +55,7 @@
                         $sql = "INSERT INTO `users`(`login`, `prénom`, `nom`, `password`) VALUES ('$pseudo','$prenom','$nom','$pswrd1')";
                         //si requete réussit
                         if ($mysqli->query($sql) === TRUE) {
-                        echo "Vous êtes bien inscrit !";
+                        echo "";
                         }
                     }
                 }
@@ -89,7 +83,7 @@
             $reponse = mysqli_fetch_array($exec);
             $count=$reponse['count(*)'];
             if ($count!=0) {
-            echo "Vous etes bien connecté !";
+            echo "";
         
         }
 

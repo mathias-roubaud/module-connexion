@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/profil.css" rel="stylesheet" type="text/css" >
-    <title>Profil</title>
+    <link href="css/connexion2.css" rel="stylesheet" type="text/css" >
+    <title>Connexion2</title>
 </head>
 <body>
 
@@ -14,7 +14,6 @@
             <div id="boutona"> <a href ="http://localhost/module-connexion/index.php/"> Accueil </a> </div>
             <div id="boutonb"> <a href ="https://support.rockstargames.com/fr/"> Contact </a> </div>
             <div id="boutonc"> <a href ="https://localhost/module-connexion/connexion.php"> Déjà inscrit ? </a> </div>
-            <div id="boutond"> <a href ="https://localhost/module-connexion/profil.php/"> Profil </a> </div>
         </div>
                 <div class ="topleft">
                 <a href="https://socialclub.rockstargames.com/"> 
@@ -24,7 +23,15 @@
 
         <div class="middle">
             <img src="https://s.rsg.sc/sc/images/react/logo/socialclub.png" height="100%" width="100%">
-            <h2>Page Profil.<br><br> Vous êtes bien connecté.</h2>
+            <h2>Bienvenue !<br><br> Vous pouvez dès à présent vous connectez.</h2>
+                <div class="boutonmiddle">
+                    <form method="post">
+                        <div id="bti"><input type="text" name="pseudo" id="pseudo" placeholder="Identifiant" required><br></div>
+                        <div id="btmdp"><input type="text" name="pswrd1" id="pswrd" placeholder="Mot de passe" required><br></div>
+                        <input type="submit" name="formsend" id="formsend">
+                    </form>
+                    <div id="btclic">Vous n'êtes toujours pas inscrit ? <a href="http://localhost/module-connexion/inscription.php/"> Cliquez ici. </a> </div>
+                </div>
         </div>
     <?php
         if(isset($_POST['formsend'])){
